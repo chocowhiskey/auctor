@@ -1,0 +1,28 @@
+
+<h1>Create your character</h1>
+
+<%= form_for [@project, @character] do |f| -%>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :age %>
+  <%= f.number_field :age %>
+  <%= f.label :sex %>
+  <%= f.text_field :sex %>
+  <%= f.label :height %>
+  <%= f.number_field :height %>
+  <%= f.label :hair_color %>
+  <%= f.text_field :hair_color %>
+  <%= f.label :eye_color %>
+  <%= f.text_field :eye_color %>
+  <%= f.label :physique %>
+  <%= f.text_field :physique %>
+  <%= f.label :profession %>
+  <%= f.text_field :profession %>
+  <%= f.label :place_of_birth %>
+  <%= f.text_field :place_of_birth %>
+  <%= f.label :birthday %>
+  <%= f.text_field :birthday %>
+  <%= f.label :personality %>
+  <%= f.text_field :personality %>
+  <%= f.submit %>
+<% end -%>
