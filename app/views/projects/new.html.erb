@@ -1,0 +1,8 @@
+<h1>Hello from new projects!</h1>
+<%= form_for(@project) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :summary %>
+  <%= f.text_field :summary %>
+  <%= f.submit %>
+<% end %>
