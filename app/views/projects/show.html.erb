@@ -4,6 +4,7 @@
 <hr>
 
 <p> <%= @project.summary %></p>
+<hr>
 
 <p>Looks like your are still missing some characters to build a plot...</p>
-<p> You can just go for the character creation here </p>
+<p> You can just go for the character creation <%= link_to 'here', new_project_character_path(@project) %> </p>

@@ -2,7 +2,7 @@
 <p>Create a new Project <%= link_to "here", new_project_path %></p>
 
 <% @projects.each do |p| %>
-  <h3><%= p.title %> </h3>
+  <h3><%= link_to p.title, p %> </h3>
   <p><%= p.summary %> </p>
 <% end %>
 

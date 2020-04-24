@@ -1,9 +1,13 @@
+<p><%= link_to "Go back to your project's overview", project_path(@project) %> </p>
 
 <h1>Create your character</h1>
 
+
 <%= form_for [@project, @character] do |f| -%>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name %>
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name %>
   <%= f.label :age %>
   <%= f.number_field :age %>
   <%= f.label :sex %>
